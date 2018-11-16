@@ -1,17 +1,12 @@
 {
     "presets": [
-        ["env", {
-            "targets": {
-                "browsers": [
-                    "> 1%",
-                    "last 2 versions"
-                ]
-            }
-        }],
-        "stage-2",
-        "react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ],
     "plugins": [
-        "syntax-dynamic-import"
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-export-namespace-from",
+      "@babel/plugin-proposal-throw-expressions"
     ]
-}
+  }
