@@ -1,13 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-class App extends Component {
-    render () {
-        return (
-            <div>
-                <h1>Test My Diary app to make sure react works</h1>
-            </div>
-        )
-    }
-}
+
+// Routes
+import Routes from './components/Routes/Routes';
+
+
+const App = () => {
+  return (
+
+        <Router>
+          <Routes />
+        </Router>
+  );
+};
 
 export default App;
