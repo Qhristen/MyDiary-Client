@@ -6,7 +6,6 @@ import store from './redux/store/index'
 // Routes
 import Routes from './components/Routes/Routes';
 
-
 const App = () => {
   return (
     <Provider store={store}>
@@ -16,5 +15,4 @@ const App = () => {
       </Provider>
   );
 };
-
 export default App;

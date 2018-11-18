@@ -4,7 +4,9 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 // Routes
 const LandingPage  = lazy(() => import('../../modules/public/LandingPage'));
+
 const Todos = lazy(() => import('../../components/todos/index'));
+
 const Routes = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
